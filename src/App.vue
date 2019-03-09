@@ -2,7 +2,8 @@
   <div id="app">
     <NavBar></NavBar>
     <div class="container">
-      <Personas></Personas>
+      <!-- <Personas></Personas> -->
+      <router-view></router-view>
     </div>
   </div>
 </template>

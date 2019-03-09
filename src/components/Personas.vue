@@ -24,7 +24,7 @@
             <td>{{persona.apPaterno+' '+persona.apMaterno}}</td>
             <td>{{persona.tipoUsuarioDescripcion}}</td>
             <td>
-              <a class="waves-effect waves-light btn ab-btn-edit" v-on:click="getPersona(persona.idPersona)">
+              <a class="waves-effect waves-light btn ab-btn-edit tooltipped" v-on:click="getPersona(persona.idPersona)" data-tooltip="I am a tooltip">
                 <i class="material-icons left ab-icon-action">edit</i>
               </a>
               <a class="waves-effect waves-light btn ab-btn-delete" v-on:click="borrar(persona.idPersona)">
@@ -93,15 +93,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="modal">
-      <div class="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
       </div>
     </div>
   </div>
