@@ -150,7 +150,6 @@ export default {
       axios.post(ruta,busSalida,config)
         .then(res=>{
           alert('Ingresado correctamente')
-          console.log(res.data);
           this.formulario = false;
           this.editar = false;
           this.getBuses();
@@ -189,17 +188,17 @@ export default {
     },
     sendBorrar: function(idBus){
       let ruta = `http://localhost:8000/apiBuses/buses/${idBus}/`;
-       axios.delete(ruta)
-        .then(res => {
-          if (res.status == 204){
-            alert('eliminado correctamente');
-            this.getBuses();
-          }
-        })
-        .catch(err=>{
-          alert('Ocurrió un error');
-          console.log('ERROR: ',err);
-        });
+      axios.delete(ruta)
+      .then(res => {
+        if (res.status == 204){
+          alert('eliminado correctamente');
+          this.getBuses();
+        }
+      })
+      .catch(err=>{
+        alert('Ocurrió un error');
+        console.log('ERROR: ',err);
+      });
     },
     enviar: function(){
       if(this.editar){

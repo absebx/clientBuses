@@ -5,6 +5,7 @@
       <ul id="nav-mobile" class="left hide-on-med-and-down">
         <li><router-link to="/personas">Personas</router-link></li>
         <li><router-link to="/buses">Buses</router-link></li>
+        <li><router-link to="/trayectos">Trayectos</router-link></li>
       </ul>
     </div>
   </nav>

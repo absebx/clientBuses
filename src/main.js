@@ -5,12 +5,18 @@ import 'materialize-css/dist/css/materialize.css'
 import VueRouter from 'vue-router'
 import Personas from './components/Personas.vue';
 import Buses from './components/Buses.vue';
+import Trayectos from './components/Trayectos.vue';
+import Horarios from './components/Horarios';
+import Pasajes from './components/Pasajes';
 
 Vue.use(VueRouter)
 
 const routes = [
   { path: '/personas', component: Personas },
-  { path: '/buses', component: Buses }
+  { path: '/buses', component: Buses },
+  { path: '/trayectos', component: Trayectos},
+  { path: '/horarios/:idTrayecto', component: Horarios},
+  { path: '/pasajes/:idHorario', component: Pasajes}
 ]
 
 const router = new VueRouter({
