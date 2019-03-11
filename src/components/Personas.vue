@@ -70,7 +70,7 @@
             </div>
             <div class="input-field col s4">
               <select v-model="persona.tipoUsuario" class="browser-default">
-                <option value="" disabled selected>Selecciona tipo de usuario</option>
+                <option value="0" disabled selected>Selecciona tipo de usuario</option>
                 <option v-for="tipo in tipoPersonas" 
                   v-bind:value="tipo.idTipoPersona"
                   v-bind:key="tipo.idPersona"
@@ -251,7 +251,7 @@ export default {
       this.persona.nombreSecundario = '';
       this.persona.apPaterno = '';
       this.persona.apMaterno = '';
-      this.persona.tipoUsuario = 2;
+      this.persona.tipoUsuario = 0;
     },
     enviar: function(){
       if(this.editar){

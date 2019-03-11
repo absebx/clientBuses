@@ -8,6 +8,7 @@ import Buses from './components/Buses.vue';
 import Trayectos from './components/Trayectos.vue';
 import Horarios from './components/Horarios';
 import Pasajes from './components/Pasajes';
+import TipoPersonas from './components/TipoPersonas';
 
 Vue.use(VueRouter)
 
@@ -16,7 +17,8 @@ const routes = [
   { path: '/buses', component: Buses },
   { path: '/trayectos', component: Trayectos},
   { path: '/horarios/:idTrayecto', component: Horarios},
-  { path: '/pasajes/:idHorario', component: Pasajes}
+  { path: '/pasajes/:idHorario', component: Pasajes},
+  { path: '/tipoPersonas', component: TipoPersonas }
 ]
 
 const router = new VueRouter({
